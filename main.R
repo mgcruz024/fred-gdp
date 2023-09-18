@@ -1,5 +1,4 @@
-#Part 5c: GDP Growth Forecast with Keras (Tensorflow)
-#Requires the completion of all steps in 5a and 5b
+GDP Growth Forecast with Keras 
 rm(list=ls(all=TRUE))
 
 usePackage <- function(p) {
@@ -11,13 +10,9 @@ usePackage('keras')
 usePackage('fredr')
 usePackage('xts')
 
-#SET FRED KEY
-#I store my key in a file which is in my private folder
-#Please do not use the link to my file, use your file
-
 fredr::fredr_set_key(
-  # either replace the line below with your key (in quotes) or make sure you have the correct path set
-  'aac1830ee17e51ab75f752a798ceb068')
+  # replace with fred key
+  'fred_key')
 
 getMASE<-function(y.xts, yhat.xts){
   #Mean Absolute Scaled Error
@@ -46,13 +41,11 @@ fredr.xts <-function(series_id, start_date){
 
 #gdp.fcst<-oneStepGDPGrowthForecast(time.series.xts=getRawFred(symbols=c('GDPC1','UNRATE','CPIAUCSL', 'GFDEGDQ188S'),start_date='2006-09-01',collapse='quarterly',type='xts'))
 oneStepGDPGrowthForecast<-function(time.series.xts,seed=1){
-  #Note: you do not need to difference all predictors
   differenced.xts<-diff(log(time.series.xts))
   
   #Do not lag y
   y<-differenced.xts[,1]
   
-  #Lag x if appropriate (note that you can use lagged y as x - just change 2 to 1)
   x<-lag(differenced.xts[,2:ncol(differenced.xts)])
   names(x)<-paste(names(x),'.lag1',sep='')
   
@@ -71,7 +64,6 @@ oneStepGDPGrowthForecast<-function(time.series.xts,seed=1){
   
   # scale (normalize) data
   
-  #NOTE: for non-normal data consider other type od scaling such as (y.train-min(y.train))/(max(y.train)-min(y.train)), remember to unscale with a propoer equation
   #plot(density(y.train))
   #shapiro.test(y.train) #small p-values indicate extreme non-normality
   #qqnorm(y.train);qqline(y.train)
@@ -82,14 +74,14 @@ oneStepGDPGrowthForecast<-function(time.series.xts,seed=1){
   # scale (normalize) new x
   x.new.scaled <- scale(x.new, center = attr(x.train.scaled, "scaled:center") , scale = attr(x.train.scaled, "scaled:scale"))  
   
-  #This is required (you may skip Quiet=T)
+
   tensorflow::set_random_seed(seed)
   #if the above causes problems, comment it and uncomment the line below
   #use_session_with_seed(seed,disable_gpu=T,disable_parallel_cpu = T,quiet=T)
   #keras:: use_session_with_seed(1,disable_gpu=T,disable_parallel_cpu = T,quiet=T)
   
   
-  # Model - this is where you need to setup your model
+  # Model 
   hidden.units.1=5
   hidden.units.2=3
   
@@ -111,7 +103,7 @@ oneStepGDPGrowthForecast<-function(time.series.xts,seed=1){
   
   #summary(model)
   
-  #This is where you need to setup your fitting parameters
+  #fitting parameters
   verbose=1
   validation.split=0.2
   epochs=100
@@ -137,10 +129,9 @@ oneStepGDPGrowthForecast<-function(time.series.xts,seed=1){
   
   predictions <- model %>% predict(x.new.scaled)
   #unscale (denormalize)
-  #NOTE: rewrite if you use other types of scaling
   predictions <- predictions * attr(y.train.scaled, "scaled:scale") + attr(y.train.scaled, "scaled:center")
   
-  #recycle x.new (so we do not have to wory about the index)
+  #recycle x.new 
   fcst.xts<-x.new
   fcst.xts$fcst<-predictions
   fcst.xts<-fcst.xts[,'fcst']
@@ -151,7 +142,6 @@ oneStepGDPGrowthForecast<-function(time.series.xts,seed=1){
 
 # Run ---------------------------------------------------------------------
 #Run forecast in a loop, plot and report MASE
-#NOTE: I realize it is not an efficient implementation - but it is safe
 
 #parameters
 backtest.start='2007-01-01'
