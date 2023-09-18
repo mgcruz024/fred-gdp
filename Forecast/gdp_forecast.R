@@ -12,12 +12,9 @@ usePackage('fredr')
 usePackage('xts')
 
 #SET FRED KEY
-#I store my key in a file which is in my private folder
-#Please do not use the link to my file, use your file
 
 fredr::fredr_set_key(
-  # either replace the line below with your key (in quotes) or make sure you have the correct path set
-  'aac1830ee17e51ab75f752a798ceb068')
+  'my_key')
 
 getMASE<-function(y.xts, yhat.xts){
   #Mean Absolute Scaled Error
