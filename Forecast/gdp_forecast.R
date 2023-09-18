@@ -1,5 +1,5 @@
 #Part 5c: GDP Growth Forecast with Keras (Tensorflow)
-#Requires the completion of all steps in 5a and 5b
+
 rm(list=ls(all=TRUE))
 
 usePackage <- function(p) {
