@@ -1,3 +1,0 @@
-# FRED-GDP
-
-Some description!
