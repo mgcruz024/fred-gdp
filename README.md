@@ -33,7 +33,7 @@ The goal is to encapsulate the process that happens every quarter.
 <img src="Screenshots/Forecast.png" width="500" height="300" />
 <img src="Screenshots/mase.png" width="175" height="60" />
 
-At the end of the one-step forecast, actual GDP is binded to the xts. This allows for calculations and charts.
+At the end of the one-step forecast, actual GDP is binded to the generated .xts. This allows for calculations and charts.
 Forecast model evaluation reported using mean absolute scaled error (MASE). Actual vs. forecast quarterly 
 GDP growth values since 2007 Q1 visualized using PerformanceAnalytics time-series charts.
 
