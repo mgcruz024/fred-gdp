@@ -15,7 +15,7 @@ R 4.3.0
 
 
 ## Backtest
-<img src="Screenshots/Screenshot 2023-06-25 182005.png" width="550" height="600" />
+<img src="Screenshots/Screenshot 2023-06-25 182005.png" width="550" height="635" />
 
 ## Evaluation 
 <img src="Screenshots/Forecast.png" width="550" height="450" />
