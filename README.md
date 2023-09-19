@@ -3,11 +3,15 @@
 <img src="Screenshots/gdp.jpg" width="650" height="375" />
 
 A one-step GDP Growth Forecast using all available quarterly GDP (GDPC1) data and user-selected predictors from the Federal Reserve Economic Data website. Used R's built-in 
-REST API 
+REST API to prepare a machine-learning function (keras) that returns the single growth forecast value for the variable in the first column for the specified time period, using the 
+remaining columns as predictors.
 
-GDP Predictors:
+GDP Predictors Used:
+- UNRATE: Unemployment Rate
+- CPIAUCSL: Consumer Price Index for All Urban Consumers (All Items in U.S. City Average)
+- GFDEGDQ188S: Federal Debt (Total Public Debt as Percent of Gross Domestic Product)
 
-
+Model evaluation 
 
 ## Packages Used 
 R 4.3.0
