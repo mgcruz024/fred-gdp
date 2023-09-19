@@ -20,7 +20,7 @@ Screenshots/Forecast.png
 
 ## Evaluation 
 <img src="Screenshots/Forecast.png" width="650" height="375" />
-<img src="Screenshots/mase.png" width="225" height="150" />
+<img src="Screenshots/mase.png" width="175" height="125" />
 
 
   
