@@ -2,6 +2,9 @@
 
 <img src="Screenshots/gdp.jpg" width="650" height="375" />
 
+GDP Predictors:
+
+
 
 ## Packages Used 
 R 4.3.0
@@ -9,4 +12,11 @@ R 4.3.0
 - fredr
 - xts
 - PerformanceAnalytics
+
+
+## Backtest
+
+
+
+## Evaluation 
   
