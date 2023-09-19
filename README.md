@@ -1,6 +1,6 @@
 # FRED-GDP
 
-Some description!
+<img src="Screenshots/gdp.jpg" width="650" height="375" />
 
 
 
