@@ -18,11 +18,15 @@ R 4.3.0
 - xts
 - PerformanceAnalytics
 
-
-## Backtest
+## Backtest and Modeling
 <img src="Screenshots/Screenshot 2023-06-25 182005.png" width="550" height="635" />
 
-To ensure safe and accurate testing, I generated a backtest loop for all quarters 2007 Q1 up until the most recent 2023 data.
+To ensure safe and accurate testing, I generated a backtest loop for all quarters 2007 Q1 up until the most recent 2023 data. 
+
+The neural network uses an expanding time window for a specified duration that trains predictors and creates a forecast one
+quarter into the future. Each loop adds additional information and repeats the training process. The goal is to encapsulate 
+the process that happens every quarter. 
+- Ex. Unemployment, C.P.I., and Federal Debt are lagged by one quarter each to predict the GDP for the following quarter. 
 
 ## Evaluation 
 <img src="Screenshots/Forecast.png" width="500" height="300" />
