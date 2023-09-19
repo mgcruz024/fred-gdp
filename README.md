@@ -33,8 +33,9 @@ The goal is to encapsulate the process that happens every quarter.
 <img src="Screenshots/Forecast.png" width="500" height="300" />
 <img src="Screenshots/mase.png" width="175" height="60" />
 
-Forecast model evaluation reported using mean absolute scaled error (MASE). Actual vs. forecast quarterly GDP growth values
-since 2007 Q1 visualized using PerformanceAnalytics time-series charts.
+At the end of the one-step forecast, actual GDP is binded to the xts. This allows for calculations and charts.
+Forecast model evaluation reported using mean absolute scaled error (MASE). Actual vs. forecast quarterly 
+GDP growth values since 2007 Q1 visualized using PerformanceAnalytics time-series charts.
 
 In this example, user-selected predictors showcased a 70.76% forecast accuracy and identical growth 
 patterns during the duration.
