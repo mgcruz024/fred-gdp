@@ -18,7 +18,7 @@ R 4.3.0
 <img src="Screenshots/Screenshot 2023-06-25 182005.png" width="550" height="500" />
 
 ## Evaluation 
-<img src="Screenshots/Forecast.png" width="550" height="300" />
+<img src="Screenshots/Forecast.png" width="550" height="400" />
 <img src="Screenshots/mase.png" width="175" height="60" />
 
 
