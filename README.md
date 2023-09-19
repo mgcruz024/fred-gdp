@@ -25,8 +25,8 @@ To ensure safe and accurate testing, I generated a backtest loop for all quarter
 backtest forecast in 2007 is based on 104 observations starting from the earliest 1979 data. 
 
 The neural network uses an expanding time window for a specified duration that trains predictors and creates a forecast one
-quarter into the future. Each loop adds additional information and repeats the training process. The goal is to encapsulate 
-the process that happens every quarter. 
+quarter into the future. Each loop adds additional information by binding the trained forecast and repeating the training 
+process. The goal is to encapsulate the process that happens every quarter. 
 - Ex. Unemployment, C.P.I., and Federal Debt are lagged by one quarter each to predict the GDP for the following quarter. 
 
 ## Evaluation 
