@@ -19,7 +19,7 @@ R 4.3.0
 - PerformanceAnalytics
 
 ## Backtest and Modeling
-<img src="Screenshots/Screenshot 2023-06-25 182005.png" width="550" height="635" />
+<img src="Screenshots/Screenshot 2023-06-25 181554.png" width="550" height="635" />
 
 To ensure safe and accurate testing, I generated a backtest loop for all quarters 2007 Q1 up until the most recent 2023 data. First
 backtest in 2007 is based on 104 observations starting from 1979. 
