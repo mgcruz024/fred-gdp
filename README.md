@@ -31,5 +31,5 @@ R 4.3.0
 ## Notes
 Personal API key omitted in code. 
 
-Retrieve a personal key from https://fred.stlouisfed.org/ to perform GDP forecasts with this model.
+Please retrieve a personal key from https://fred.stlouisfed.org/ to perform GDP forecasts with this model.
   
