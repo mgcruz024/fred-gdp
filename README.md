@@ -29,7 +29,7 @@ R 4.3.0
 <img src="Screenshots/mase.png" width="175" height="60" />
 
 ## Notes
-Personal API key voided in code. 
+Personal API key omitted in code. 
 
 Retrieve a personal key from https://fred.stlouisfed.org/ to perform GDP forecasts with this model.
   
