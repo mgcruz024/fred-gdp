@@ -11,8 +11,6 @@ GDP Predictors Used:
 - CPIAUCSL: Consumer Price Index for All Urban Consumers (All Items in U.S. City Average)
 - GFDEGDQ188S: Federal Debt (Total Public Debt as Percent of Gross Domestic Product)
 
-Model evaluation 
-
 ## Packages Used 
 R 4.3.0
 - keras
@@ -24,9 +22,17 @@ R 4.3.0
 ## Backtest
 <img src="Screenshots/Screenshot 2023-06-25 182005.png" width="550" height="635" />
 
+To ensure safe and accurate testing, I generated a backtest loop for all quarters 2007 Q1 up until the most recent 2023 data.
+
 ## Evaluation 
 <img src="Screenshots/Forecast.png" width="500" height="300" />
 <img src="Screenshots/mase.png" width="175" height="60" />
+
+Forecast evaluation reported using mean absolute scaled error (MASE). Actual vs. forecast quarterly GDP growth values
+since 2007 Q1 visualized using PerformanceAnalytics time-series charts.
+
+In this example, user-selected predictors showcased similar patterns to actual GDP growth and 
+a 70.76 forecast accuracy%. 
 
 ## Notes
 Personal API key omitted in code. 
