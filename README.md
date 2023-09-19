@@ -28,11 +28,11 @@ To ensure safe and accurate testing, I generated a backtest loop for all quarter
 <img src="Screenshots/Forecast.png" width="500" height="300" />
 <img src="Screenshots/mase.png" width="175" height="60" />
 
-Forecast evaluation reported using mean absolute scaled error (MASE). Actual vs. forecast quarterly GDP growth values
+Forecast model evaluation reported using mean absolute scaled error (MASE). Actual vs. forecast quarterly GDP growth values
 since 2007 Q1 visualized using PerformanceAnalytics time-series charts.
 
 In this example, user-selected predictors showcased similar patterns to actual GDP growth and 
-a 70.76 forecast accuracy%. 
+a 70.76 forecast% accuracy. 
 
 ## Notes
 Personal API key omitted in code. 
