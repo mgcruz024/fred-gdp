@@ -37,7 +37,7 @@ At the end of the one-step forecast, actual GDP is binded to the generated .xts.
 Forecast model evaluation reported using mean absolute scaled error (MASE). Actual vs. forecast quarterly 
 GDP growth values since 2007 Q1 visualized using PerformanceAnalytics time-series charts.
 
-In this example, user-selected predictors showcased a 70.76% forecast accuracy and identical growth 
+In this example, user-selected predictors showcased a 70.76 MASE and identical growth 
 patterns during the duration.
 
 ## Notes
