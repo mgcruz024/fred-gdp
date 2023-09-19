@@ -15,8 +15,12 @@ R 4.3.0
 
 
 ## Backtest
-
+Screenshots/Forecast.png
 
 
 ## Evaluation 
+<img src="Screenshots/Forecast.png" width="650" height="375" />
+<img src="Screenshots/mase.png" width="650" height="375" />
+
+
   
