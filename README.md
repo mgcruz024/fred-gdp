@@ -21,8 +21,8 @@ R 4.3.0
 ## Backtest and Modeling
 <img src="Screenshots/Screenshot 2023-06-25 181554.png" width="550" height="635" />
 
-To ensure safe and accurate testing, I generated a backtest loop for all quarters 2007 Q1 up until the most recent 2023 data. First
-backtest forecast in 2007 is based on 104 observations starting from 1979. 
+To ensure safe and accurate testing, I generated a backtest loop for all quarters 2007 Q1 up until the latest 2023 data. First
+backtest forecast in 2007 is based on 104 observations starting from the earliest 1979 data. 
 
 The neural network uses an expanding time window for a specified duration that trains predictors and creates a forecast one
 quarter into the future. Each loop adds additional information and repeats the training process. The goal is to encapsulate 
