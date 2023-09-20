@@ -27,7 +27,7 @@ backtest forecast in 2007 is based on 104 observations starting from the earlies
 The neural network uses an expanding time window for a specified duration that trains predictors and creates a forecast one
 quarter into the future. Each loop repeats the training process and adds additional information by binding the trained forecast. 
 The goal is to encapsulate the process that happens every quarter. 
-- Ex. Unemployment, C.P.I., and Federal Debt are lagged by one quarter each to predict the GDP for the following quarter. 
+- Ex. Unemployment, Consumer Price Index, and Federal Debt are lagged by one quarter each to predict the GDP for the following quarter. 
 
 ## Evaluation 
 <img src="Screenshots/Forecast.png" width="500" height="300" />
