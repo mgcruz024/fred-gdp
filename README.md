@@ -2,7 +2,7 @@
 
 <img src="Screenshots/gdp.jpg" width="650" height="375" />
 
-A one-step GDP Growth Forecast using all available quarterly GDP (GDPC1) data and user-selected predictors from the Federal Reserve Economic Data website. 
+A one-step GDP Growth Forecast using all available quarterly GDP (GDPC1) data and user-selected predictors from the [Federal Reserve Economic Data](https://fred.stlouisfed.org/). 
 Used R's built-in REST API to prepare a machine-learning function (keras) that returns the single growth forecast value for the variable in the first column 
 for the specified time period, using the remaining columns as predictors.
 
