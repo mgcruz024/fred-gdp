@@ -163,7 +163,7 @@ for(series in series_ids){
 backtest.quarters<-index(time.series.xts)
 backtest.quarters<-backtest.quarters[which(backtest.quarters>=backtest.start)]
 
-#backtest loop: subset and run (inefficient but safe)
+#backtest loop: subset and run 
 
 for(q in backtest.quarters){
   #q<-backtest.quarters[1]
